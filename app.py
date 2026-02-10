@@ -9,8 +9,6 @@ from GameRecommender import GameRecommender
 # CONFIGURACIÓN DE LA PÁGINA
 # ══════════════════════════════════════════════════════════════════
 
-print(numpy.version.__version__)
-
 st.set_page_config(
     page_title="BGG Game Recommender",
     page_icon="🎲",
