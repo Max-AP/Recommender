@@ -23,7 +23,7 @@ st.set_page_config(
 # ESTILOS CSS PERSONALIZADOS
 # ══════════════════════════════════════════════════════════════════
 
-st.markdown("""
+st.markdown("""<style>
 
     /* Fondo principal */
     .main {
@@ -69,7 +69,7 @@ st.markdown("""
     /* Métricas */
     [data-testid="stMetricValue"] {
         color: #00ffcc;
-    }
+    }</style>
 
 """, unsafe_allow_html=True)
 
