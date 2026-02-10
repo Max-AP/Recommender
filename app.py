@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy
 from GameDataset import GameDataset
 from GameAnalyzer import GameAnalyzer
 from GameRecommender import GameRecommender
