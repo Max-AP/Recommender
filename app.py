@@ -19,29 +19,55 @@ st.set_page_config(
 # ESTILOS CSS PERSONALIZADOS
 # ══════════════════════════════════════════════════════════════════
 
+# ══════════════════════════════════════════════════════════════════
+# ESTILOS CSS PERSONALIZADOS
+# ══════════════════════════════════════════════════════════════════
+
 st.markdown("""
 
+    /* Fondo principal */
     .main {
         background-color: #0e1117;
     }
+
+    /* Botones */
     .stButton>button {
         background-color: #00ffcc;
         color: #000000;
         border-radius: 8px;
         padding: 10px 24px;
         font-weight: bold;
+        border: none;
+        transition: all 0.3s ease;
     }
+
     .stButton>button:hover {
         background-color: #ff0055;
         color: #ffffff;
+        transform: scale(1.05);
     }
+
+    /* Títulos */
     h1 {
         color: #00ffcc;
+        font-weight: bold;
     }
+
     h2 {
         color: #ff0055;
     }
+
     h3 {
+        color: #00ffcc;
+    }
+
+    /* Sidebar */
+    [data-testid="stSidebar"] {
+        background-color: #1a1a1a;
+    }
+
+    /* Métricas */
+    [data-testid="stMetricValue"] {
         color: #00ffcc;
     }
 
