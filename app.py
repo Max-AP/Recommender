@@ -82,7 +82,7 @@ st.markdown("""<style>
 def load_data():
     """Carga el dataset y crea las instancias necesarias."""
     # Cargar CSV
-    df = pd.read_csv('boardgame-geek-dataset_organized.csv')
+    df = pd.read_csv('games_enriched.csv')
     df = df.drop_duplicates(subset='boardgame').reset_index(drop=True)
 
     # Crear instancias
