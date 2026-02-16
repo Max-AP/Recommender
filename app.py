@@ -83,7 +83,13 @@ def load_data():
     """Carga el dataset y crea las instancias necesarias."""
     # Cargar CSV
     df = pd.read_csv('games_enriched.csv')
+
+    # Limpiar NaN en boardgame
+    df = df.dropna(subset=['boardgame'])
+    # Eliminar duplicados
     df = df.drop_duplicates(subset='boardgame').reset_index(drop=True)
+    # Asegurar que boardgame sea string
+    df['boardgame'] = df['boardgame'].astype(str)
 
     # Crear instancias
     dataset = GameDataset(df)
